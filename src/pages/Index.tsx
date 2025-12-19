@@ -1,12 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/Header";
+import CategoryTabs from "@/components/CategoryTabs";
+import HeroBanner from "@/components/HeroBanner";
+import InPlayMatches from "@/components/InPlayMatches";
+import PopularSports from "@/components/PopularSports";
+import CasinoGames from "@/components/CasinoGames";
+import UpcomingGames from "@/components/UpcomingGames";
+import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Header />
+      <CategoryTabs />
+      <main>
+        <HeroBanner />
+        <InPlayMatches />
+        <PopularSports />
+        <CasinoGames />
+        <UpcomingGames />
+        <CTASection />
+      </main>
+      <Footer />
     </div>
   );
 };
