@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Gamepad2, Trophy, Sparkles, Play, Star } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Play, Star } from "lucide-react";
 
 interface Game {
   id: string;
@@ -109,7 +110,8 @@ const GameCategories = () => {
         {/* Games Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
           {currentCategory.games.map((game, index) => (
-            <div
+            <Link
+              to={`/game/${game.id}`}
               key={game.id}
               className="group relative rounded-2xl overflow-hidden bg-card border border-border/50 
                        hover:border-primary/50 transition-all duration-300 cursor-pointer animate-fade-in"
@@ -135,10 +137,9 @@ const GameCategories = () => {
                 {/* Play Button Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 
                               group-hover:opacity-100 transition-all duration-300">
-                  <button className="p-4 rounded-full bg-primary text-primary-foreground 
-                                   hover:scale-110 transition-transform glow-green">
+                  <div className="p-4 rounded-full bg-primary text-primary-foreground glow-green">
                     <Play className="h-6 w-6 fill-current" />
-                  </button>
+                  </div>
                 </div>
               </div>
 
@@ -152,7 +153,7 @@ const GameCategories = () => {
                   </p>
                 )}
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
