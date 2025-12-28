@@ -43,15 +43,16 @@
 
     --neon-green: 152 100% 50%;
     --neon-gold: 45 100% 50%;
-    --neon-red: 0 100% 60%;
+    --neon-cyan: 180 100% 50%;
     --neon-blue: 210 100% 60%;
+    --neon-purple: 270 80% 60%;
 
     --font-heading: "Orbitron", sans-serif;
     --font-body: "Inter", sans-serif;
 
     --glow-green: 0 0 20px hsl(152 100% 50% / 0.5), 0 0 40px hsl(152 100% 50% / 0.3);
     --glow-gold: 0 0 20px hsl(45 100% 50% / 0.5), 0 0 40px hsl(45 100% 50% / 0.3);
-    --glow-red: 0 0 15px hsl(0 100% 60% / 0.6);
+    --glow-cyan: 0 0 15px hsl(180 100% 50% / 0.6);
 
     --sidebar-background: 222 47% 8%;
     --sidebar-foreground: 0 0% 98%;
@@ -95,8 +96,12 @@
     color: hsl(var(--neon-gold));
   }
 
-  .text-neon-red {
-    color: hsl(var(--neon-red));
+  .text-neon-cyan {
+    color: hsl(var(--neon-cyan));
+  }
+
+  .text-neon-purple {
+    color: hsl(var(--neon-purple));
   }
 
   .bg-neon-green {
@@ -107,8 +112,8 @@
     background-color: hsl(var(--neon-gold));
   }
 
-  .bg-neon-red {
-    background-color: hsl(var(--neon-red));
+  .bg-neon-cyan {
+    background-color: hsl(var(--neon-cyan));
   }
 
   .glow-green {
@@ -119,8 +124,8 @@
     box-shadow: var(--glow-gold);
   }
 
-  .glow-red {
-    box-shadow: var(--glow-red);
+  .glow-cyan {
+    box-shadow: var(--glow-cyan);
   }
 
   .glass {
@@ -178,7 +183,7 @@
 
   .live-indicator {
     @apply inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-xs font-bold
-           bg-neon-red/20 text-neon-red border border-neon-red/30;
+           bg-primary/20 text-primary border border-primary/30;
   }
 
   .category-tab {
