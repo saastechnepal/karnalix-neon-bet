@@ -68,8 +68,9 @@ export default {
         neon: {
           green: "hsl(var(--neon-green))",
           gold: "hsl(var(--neon-gold))",
-          red: "hsl(var(--neon-red))",
+          cyan: "hsl(var(--neon-cyan))",
           blue: "hsl(var(--neon-blue))",
+          purple: "hsl(var(--neon-purple))",
         },
       },
       borderRadius: {

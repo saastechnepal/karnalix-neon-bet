@@ -1,27 +1,23 @@
 import Header from "@/components/Header";
-import CategoryTabs from "@/components/CategoryTabs";
 import HeroBanner from "@/components/HeroBanner";
-import InPlayMatches from "@/components/InPlayMatches";
-import PopularSports from "@/components/PopularSports";
-import CasinoGames from "@/components/CasinoGames";
+import GameCategories from "@/components/GameCategories";
 import UpcomingGames from "@/components/UpcomingGames";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <CategoryTabs />
       <main>
         <HeroBanner />
-        <InPlayMatches />
-        <PopularSports />
-        <CasinoGames />
+        <GameCategories />
         <UpcomingGames />
         <CTASection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
